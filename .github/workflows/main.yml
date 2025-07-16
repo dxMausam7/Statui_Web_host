@@ -19,4 +19,5 @@ jobs:
         aws-region: us-east-1
 
     - name: Deploy static site to S3 bucket
-      run: aws s3 sync ./public/ Test://s3-bucket-test-09 --delete
+      run: aws s3 sync ./Public/templatemo_590_topic_listing/ s3://s3-bucket-test-09 --delete
+
